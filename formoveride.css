@@ -1,0 +1,465 @@
+/* FlowToolKitButtonStyles */
+
+.flowForm {
+
+}
+
+.flowForm .slds-spinner_container {
+    width: calc(100% + 2.1rem);
+    margin-left: -1.05rem;
+    z-index: 5 !important;
+}
+
+.flowForm .parallax {
+    min-height: 100px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flowForm .slds-tabs_scoped__content,
+.flowForm .slds-vertical-tabs__content {
+    padding-right: 1.25rem;
+    padding-left: 0.75rem;
+    padding-bottom: 10px;
+}
+.flowForm .slds-vertical-tabs__content {
+    min-height: 500px;
+    overflow-x: auto;
+}
+
+.flowForm .slds-vertical-tabs {
+    overflow-x: scroll;
+}
+.flowForm .slds-vertical-tabs .slds-vertical-tabs__nav {
+    width: max-content;
+}
+.flowForm .slds-vertical-tabs .slds-vertical-tabs__nav .slds-vertical-tabs__nav-item .slds-vertical-tabs__right-icon {
+    margin-left: var(--lwc-spacingXSmall, 0.5rem);
+}
+
+
+.flowForm .slds-accordion__summary-action,
+.flowForm .slds-scope .slds-accordion__summary-action {
+    margin-top: unset;
+    margin-bottom: unset;
+    padding-bottom: unset;
+    padding-top: unset;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.flowForm .slds-accordion__summary,
+.flowForm .slds-scope .slds-accordion__summary {
+    box-shadow: unset;
+    border-radius: unset;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    min-height: 40px;
+    /*max-height: 60px;*/
+}
+.flowForm .slds-accordion__section,
+.flowForm .slds-scope .slds-accordion__section {
+    padding-top: unset;
+    padding-bottom: unset;
+}
+.flowForm .slds-accordion .slds-accordion__content,
+.flowForm .slds-scope .slds-accordion .slds-accordion__content {
+    padding-top: unset;
+    padding-bottom: unset;
+    margin-bottom: unset;
+}
+
+.slds-button,
+.slds-scope .slds-button {
+    white-space: nowrap !important;
+}
+
+.slds-col--padded {
+    padding: unset;
+}
+
+.forceCommunityFlowCommunity {
+    border: unset;
+}
+
+.quick-actions-panel .flowruntimeBody,
+.forceCommunityFlowCommunity .flowruntimeBody {
+    padding-left: unset !important;
+    padding-right: unset !important;
+    margin-top: unset !important;
+}
+
+.flowruntimeBody.flowruntimeBody__lwc {
+    padding-left: 1.75rem !important;
+    padding-right: 1.75rem !important;
+}
+
+.flowForm .flowruntimeBody.flowruntimeBody__lwc {
+    padding-left: 1.1rem !important;
+    padding-right: 1.1rem !important;
+}
+
+/**These are overrides for Standard Flow Components to align with form builder components**/
+flowruntime-display-text-lwc > .slds-rich-text-editor__output {
+    /*margin-left: -1rem;
+    margin-right: -1rem;
+    width: calc(100% + 2rem);
+    display: block;*/
+}
+
+/*flowruntime-screen-field flowruntime-record-field record_flexipage-record-field {
+    padding-left: 0.60rem;
+    padding-right: 0.60rem;
+}*/
+
+
+lightning-lookup-address label {
+    display: none !important;
+}
+
+.flowForm lightning-input-address lightning-lookup-address .input-container,
+.flowForm lightning-input-address lightning-textarea .textarea-container,
+.flowForm lightning-input-address lightning-input .slds-form-element__control,
+.flowForm lightning-input-address lightning-picklist .slds-form-element {
+    margin-bottom: var(--lwc-spacingXSmall, 0.5rem);
+    padding: unset;
+}
+
+.runtime_platform_actionsQuickActionWrapper .slds-card__header {
+    display: none !important;
+}
+.quick-actions-panel .flowruntimeBody .slds-modal__content {
+    overflow-y : scroll;
+}
+.quick-actions-panel .flowruntimeBody .slds-modal__container {
+    width : 95%;
+    margin-top: 10px;
+}
+.quick-actions-panel .flowruntimeBody .customBackdrop {
+    width: 104%;
+    left: -2%;
+}
+
+
+.flow-tool-kit-buttons .slds-docked-form-footer {
+    z-index: 3;
+}
+
+.slds-modal__container .flowruntimeBody .slds-docked-form-footer,
+.quick-actions-panel .flowruntimeBody .slds-docked-form-footer {
+    position: absolute;
+}
+
+.pausedFlowModal .slds-docked-form-footer {
+    position: absolute;
+    bottom: unset;
+}
+
+
+.slds-dueling-list__column_responsive .slds-dueling-list__options {
+    height: unset !important;
+    min-height: 10rem;
+    max-height: 23rem;
+}
+
+/**Hide help text icon whenever Label is Hidden**/
+.cUnite_HideLabel lightning-helptext,
+.cUnite_HideLabel lightning-helptext[lightning-combobox_combobox],
+.cUnite_HideLabel lightning-helptext[lightning-groupedcombobox_groupedcombobox],
+.cUnite_HideLabel lightning-helptext[lightning-duallistbox_duallistbox] {
+    display : none;
+}
+
+.flowForm .slds-form-element__help {
+    font-size:8px !important;
+    max-width: 75%;
+    z-index: 2;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    padding-left: 5px;
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding-right: 5px;
+    background-color: rgba(255,255,255,0.75);
+}
+.flowForm .flowForm_Basic_Checkbox .slds-form-element__help {
+    display: none;
+}
+
+/**Validation Error Overrides**/
+lightning-select .slds-form-element__help,
+.focused .slds-form-element__help {
+    display: none !important;
+}
+lightning-textarea .slds-form-element__help{
+    bottom: 8px !important;
+}
+
+.slds-rich-text-editor .slds-p-around_small {
+    padding:0 5px 5px 0;
+}
+
+c-flow-form-checkbox .slds-checkbox_toggle {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/**This is to fix the modal aura action not working with color**/
+.siteforcePanelsContainer .modal-header .title {
+    color: unset;
+}
+
+.slds-popover {
+    z-index: 90;
+}
+
+.flowForm lightning-static-map .slds-iframe-container {
+    margin-top: 5px;
+}
+/**reCaptcha when enabled**/
+.grecaptcha-badge {
+    z-index: 9000;
+}
+
+.slds-combobox-addon_middle .slds-combobox__input {
+    border-radius: 0;
+}
+
+.flowForm .slds-input[disabled] {
+    background-color: rgb(254, 254, 254);
+}
+
+.iconButtonPicklist .slds-form-element__icon {
+    padding-top : 0;
+}
+
+.iconButtonPicklist .small .slds-button__icon {
+    width: var(--lwc-squareIconSmallBoundary,1.5rem);
+    height: var(--lwc-squareIconSmallBoundary,1.5rem);
+    line-height: var(--lwc-lineHeightReset,1);
+}
+
+.iconButtonPicklist .medium .slds-button__icon {
+    width: var(--lwc-squareIconMediumBoundary,2rem);
+    height: var(--lwc-squareIconMediumBoundary,2rem);
+    line-height: var(--lwc-lineHeightReset,1);
+}
+
+.iconButtonPicklist .large .slds-button__icon {
+    width: var(--lwc-squareIconLargeBoundary,3rem);
+    height: var(--lwc-squareIconLargeBoundary,3rem);
+    line-height: var(--lwc-lineHeightReset,1);
+}
+
+.iconButtonPicklist .activeValue .slds-button__icon {
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.3));
+    fill: var(--iconfillcolor,currentColor);;
+}
+
+.formBuilder .slds-rich-text-area__content {
+    background-color: #FAFAFA;
+}
+
+.flowForm
+.visual-picker[FlowToolKit-formSectionPicker_formSectionPicker] input:not(:disabled)[FlowToolKit-formSectionPicker_formSectionPicker] ~ label:hover[FlowToolKit-formSectionPicker_formSectionPicker]
+.visual-picker__figure[FlowToolKit-formSectionPicker_formSectionPicker] {
+    cursor: pointer;
+    outline: 0;
+    border: 2px solid var(--lwc-brandPrimary,#1b96ff);
+    -webkit-box-shadow: 0 0 0 1px var(--lwc-brandPrimary,#1b96ff) inset;
+    box-shadow: 0 0 0 1px var(--lwc-brandPrimary,#1b96ff) inset;
+}
+
+.flowForm .slds-icon_container.slds-visual-picker__text-check,
+.flowForm .visual-picker input:checked ~ label .visual-picker__text:after {
+    z-index: 1;
+}
+
+
+.flowForm .fixedSpinner .slds-spinner {
+    position:fixed;
+}
+
+.flowForm iframe {
+    width: 100%;
+}
+
+
+.finderHeaderShadow .slds-tabs_default__nav {
+    z-index:1;
+    position: relative;
+    box-shadow: 0 0.1875rem 0.0625rem -0.125rem rgb(0 0 0 / 12%), 0 0.25rem 0.5rem 0.0625rem rgb(0 0 0 / 12%);
+}
+
+.flowForm .slds-modal__container .slds-theme_error {
+    color: white;
+}
+
+.flowForm .slds-form-element__row {
+    margin-bottom: 0;
+}
+
+.flowForm .slds-progress {
+    max-width: 100%;
+}
+
+.flowForm .slds-checkbox .slds-checkbox__label {
+    display: flex;
+}
+.flowForm .flowForm_Basic_Checkbox .slds-checkbox .slds-checkbox__label {
+    display: initial;
+}
+
+.flowForm .slds-checkbox .slds-checkbox__label .slds-form-element__label {
+    display: inline-block;
+    padding-top: unset;
+}
+
+.flowForm c-flow-form-multiselect-checkbox .slds-checkbox .slds-checkbox__label .slds-checkbox_faux {
+    margin-top : 2px;
+}
+
+/**These are for grouped picklist buttons**/
+.flowForm .input_group_end {
+    padding-left: 1px;
+}
+
+.flow-tool-kit-buttons .mobile-button-stacked .slds-button,
+.flow-tool-kit-buttons .mobile-button-stacked .slds-button-group .slds-button{
+    width: 100% !important;
+}
+
+.flowForm .input_group_end .slds-input,
+.flowForm .input_group_end .slds-button {
+    border-radius : 0 0.25rem 0.25rem 0;
+}
+.flowForm .input_group_start {
+    padding-right : 1px;
+}
+.flowForm .input_group_start .slds-input,
+.flowForm .input_group_start .slds-button {
+    border-radius : 0.25rem 0 0 0.25rem;
+}
+.flowForm .input_group_middle {
+    padding-left : 1px;
+    padding-right : 1px;
+}
+.flowForm .input_group_middle .slds-input,
+.flowForm .input_group_middle .slds-button {
+    border-radius :  0;
+}
+.flowForm .slds-combobox-addon_middle .slds-combobox__input {
+    border-radius: 0;
+}
+
+.quick-actions-panel .flow-form-docked-buttons,
+.quick-actions-panel .docked-buttons-info-dialog {
+    position: absolute !important;
+}
+
+.flowForm .slds-checkbox_toggle .slds-required {
+    display: none !important;
+}
+
+.flowForm .slds-has-error .slds-checkbox_toggle .slds-checkbox_faux {
+    box-shadow: 0px 0px 1px 2px red !important;
+}
+
+.flowForm .slds-checkbox abbr.slds-required {
+    /*display: none !important;*/
+}
+
+/* Hide the scrollbar for webkit-based browsers (Chrome, Safari) */
+.flowForm .calculatedDataTable ::-webkit-scrollbar {
+    width: 0rem; /* You can adjust this to make it as narrow as possible */
+}
+
+/* Optional: Style the thumb and track for webkit-based browsers */
+.flowForm .calculatedDataTable ::-webkit-scrollbar-thumb,
+.flowForm .calculatedDataTable ::-webkit-scrollbar-track {
+    background: transparent; /* Make the thumb transparent */
+}
+
+/* For Firefox */
+.flowForm .calculatedDataTable {
+    scrollbar-width: none; /* Hide the scrollbar in Firefox */
+}
+
+.flowForm .calculatedDataTable .slds-scrollable_x,
+.flowForm .calculatedDataTable .slds-scrollable--x {
+    overflow-x: hidden;
+}
+
+/**Stretch Radio Buttons**/
+.flowForm lightning-radio-group.slds-form-element,
+.flowForm .slds-radio_button-group,
+.flowForm .slds-radio_button-group .slds-radio_button,
+.flowForm .slds-radio_button-group .slds-radio_button .slds-radio_button__label {
+    width:100%
+}
+
+.flowForm .slds-radio_button-group .slds-radio_button .slds-radio_button__label {
+    text-align:center;
+}
+
+.flowForm .custom-lookup .slds-input__icon-group {
+    display: none;
+}
+
+.flowForm .slds-form-element__label {
+    line-height: 1.5;
+}
+
+.flowForm .flow-form-image-upload {
+    .slds-file-selector__dropzone label {
+        width: 100%;
+        height: var(--sds-c-textarea-sizing-min-height,50px);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .slds-file-selector.slds-file-selector_files,
+    .slds-file-selector__dropzone,
+    .slds-file-selector__dropzone slot {
+        width: 100%;
+    }
+}
+
+.flow-form-lone-button-menu button {
+    height: var(--slds-c-button-line-height, var(--sds-c-button-line-height, var(--lwc-lineHeightButton, 1.875rem)));
+    border-radius: var(--lwc-buttonBorderRadius, .25rem);
+}
+
+.flowForm-Stage-Indicator .slds-path__action {
+    display: none;
+}
+
+.flowForm_small-button button {
+    height: 100%;
+}
+
+.flowForm-Stage-Indicator .slds-progress_vertical .slds-progress__item.slds-is-completed .slds-progress__marker_icon svg {
+    fill:var(--slds-c-button-success-color-background,#45c65a);
+}
+
+.flowForm lightning-lookup-mobile .slds-listbox,
+.flowForm lightning-lookup-mobile .slds-listbox .slds-listbox-item,
+.flowForm lightning-lookup-mobile lightning-pill,
+.flowForm lightning-lookup-mobile lightning-pill .slds-pill {
+    width:100% !important;
+}
+.flowForm lightning-lookup-mobile lightning-pill .slds-pill .slds-pill__remove {
+    visibility: hidden;
+}
+.flowForm lightning-lookup-mobile lightning-pill .slds-pill {
+    padding:0.25rem;
+}
+.flowForm lightning-lookup-mobile .slds-faux-input {
+    height: 2rem;
+}
