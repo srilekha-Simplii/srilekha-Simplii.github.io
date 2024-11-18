@@ -1,7 +1,10 @@
 /* FlowToolKitButtonStyles */
 
-.flowForm {
-
+.flowForm.flowForm {
+width: 300px;
+height: 200px;
+overflow: auto;
+border: 1px solid #ccc;
 }
 
 .flowForm .slds-spinner_container {
